@@ -7,12 +7,16 @@
 <body>
 <div>
   <div class='center'>
-    <div class='title'>Classify UNR Buildings</div>
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/21/Nevada_Wolf_Pack_logo.svg/1200px-Nevada_Wolf_Pack_logo.svg.png"
+         alt="unr logo"
+         width="300"
+         height="192">
+    <div class='title'><strong>Classify UNR Buildings</strong></div>
     <p>
-      Use images of <strong>E. L. Wiegand Fitness Center,</strong>
-                    <strong> Joe Crowley Student Union,</strong>
-                    <strong> Mathewson-IGT Knowledge Center,</strong> or
-                    <strong> William N. Pennington Student Achievement Center</strong>
+      Upload images of <strong>E. L. Wiegand Fitness Center,</strong>
+                       <strong> Joe Crowley Student Union,</strong>
+                       <strong> Mathewson-IGT Knowledge Center,</strong> or
+                       <strong> William N. Pennington Student Achievement Center</strong>
     </p>
     <div class='content'>
       <div class='no-display'>
@@ -25,13 +29,13 @@
       </div>
       <button class='choose-file-button' type='button' onclick='showPicker()'>Select Image</button>
       <div class='upload-label'>
-        <label id='upload-label'>No file chosen</label>
+        <label id='upload-label'>No file selected</label>
       </div>
       <div>
         <img id='image-picked' class='no-display' alt='Chosen Image' height='200'>
       </div>
       <div class='analyze'>
-        <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>Analyze</button>
+        <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>Classify</button>
       </div>
       <div class='result-label'>
         <label id='result-label'></label>
