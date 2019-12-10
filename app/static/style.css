@@ -22,7 +22,7 @@ body {
 }
 
 .content {
-    margin-top: 10em;
+    margin-top: 7em;
 }
 
 .analyze {
@@ -49,6 +49,12 @@ button.choose-file-button {
     font-size: 13px;
     color: #002D62;
     cursor: pointer;
+    transition: 0.2s;
+}
+
+button.choose-file-button:hover {
+  background-color: #002D62;
+  color: #ffffff;
 }
 
 button.analyze-button {
@@ -60,6 +66,12 @@ button.analyze-button {
     font-size: 13px;
     color: #ffffff;
     cursor: pointer;
+    transition: 0.2s;
+}
+
+button.analyze-button:hover {
+  background-color: #ffffff;
+  color: #002D62;
 }
 
 button:focus {
