@@ -16,7 +16,7 @@ function showPicked(input) {
 
 function analyze() {
   var uploadFiles = el("file-input").files;
-  if (uploadFiles.length !== 1) alert("Please select a file to classify");
+  if (uploadFiles.length !== 1) alert("Please select an image to classify");
 
   el("analyze-button").innerHTML = "Classifying your image...";
   var xhr = new XMLHttpRequest();
@@ -31,7 +31,7 @@ function analyze() {
       var response = JSON.parse(e.target.responseText);
       el("result-label").innerHTML = `Prediction = ${response["result"]}`;
     }
-    el("analyze-button").innerHTML = "Analyze";
+    el("analyze-button").innerHTML = "Classify";
   };
 
   var fileData = new FormData();
