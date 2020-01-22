@@ -16,9 +16,9 @@ function showPicked(input) {
 
 function analyze() {
   var uploadFiles = el("file-input").files;
-  if (uploadFiles.length !== 1) alert("Please select an image to classify");
-
-  el("analyze-button").innerHTML = "Classifying your image...";
+  if (uploadFiles.length !== 1) alert("Please select an image to classify")
+  else
+    el("analyze-button").innerHTML = "Classifying your image...";
   var xhr = new XMLHttpRequest();
   var loc = window.location;
   xhr.open("POST", `${loc.protocol}//${loc.hostname}:${loc.port}/analyze`,
