@@ -82,7 +82,7 @@ async def test(request):
 @app.route('/gang', methods=['POST'])
 async def gang(request):
     img_data = await request.form('img')
-    prediction = learn.predict(img)[0]
+    prediction = learn.predict(img_data)[0]
     return JSONResponse({'result': str(prediction)})
 
 if __name__ == '__main__':
